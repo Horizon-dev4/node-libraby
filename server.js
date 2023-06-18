@@ -28,6 +28,6 @@ const indexRouter = require('./routes/index')
 app.use('/', indexRouter)
 
 app.listen(process.env.PORT || port, () => {
-    console.log(`Server is running on port ${port}`)
+    console.log(`Server is running on port ${process.env.PORT || port}`)
 })
 
